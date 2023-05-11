@@ -50,8 +50,6 @@ def insert_from_dict(result_dict: dict, db_file_name: str, db_table_name: str = 
     if db_table_name == "":
         db_table_name = db_file_name.replace(".db", "")
 
-
-
     columns = list(result_dict.keys())
     row_count = len(next(iter(result_dict.values())))
 
